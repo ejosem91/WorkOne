@@ -1,5 +1,4 @@
 
-
     fun main(args:Array<String>) {
         var listOfItems = ArrayList<Item>()
         var simulator1 = Simulation()

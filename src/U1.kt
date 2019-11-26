@@ -6,16 +6,22 @@ class U1 :Rocket() {
 
     override fun launch(): Boolean {
         val chaceExplosion = 0.05 *(vargoCarried/tonneToKgm(maxWeightTonnes))
-        val ramdomCreated = Random()
-        val ramdom = ramdomCreated.nextDouble()
-        return ramdom > chaceExplosion
+        val  probability = createDecimal()
+        return probability > chaceExplosion
     }
 
     override fun land(): Boolean {
-        return super.land()
+        val chanceLandingCrash = 0.01 * (vargoCarried/tonneToKgm(maxWeightTonnes))
+        val probability   = createDecimal()
+        return probability >chanceLandingCrash
     }
 
     private fun tonneToKgm(maxWeight: Int): Int{
         return maxWeight * 1000
+    }
+
+    private fun createDecimal(): Double{
+        val ramdomCreated = Random()
+        return  ramdomCreated.nextDouble()
     }
 }
