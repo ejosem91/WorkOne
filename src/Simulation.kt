@@ -12,9 +12,9 @@ class Simulation {
     }
 
     fun loadU1(){
-        var listForRocket = ArrayList<Item>()
-        listForRocket = loadItems();
-        //var totalWeight :Int =  listForRocket.sumBy{it.weight}
+        var listForRocket = listOf<Item>()
+        listForRocket = loadItems()
+        var totalWeight :Int =  listForRocket.sumBy{ it.weight ?: 0}
     }
 
 }
