@@ -13,7 +13,7 @@ class Simulation {
 
     fun loadU1(){
         var listForRocket = listOf<Item>()
-        listForRocket = loadItems()
+        listForRocket = loadItems() // get list from loadItes
         var totalWeight :Int =  listForRocket.sumBy{ it.weight ?: 0}
     }
 
