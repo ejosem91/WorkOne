@@ -1,4 +1,6 @@
-open class Rocket:SpaceShip {
+open class Rocket():SpaceShip {
+    var weightMax: Int = 0
+    var weightRocket:Int = 0
     override fun launch(): Boolean {
         return  true
     }
@@ -8,11 +10,13 @@ open class Rocket:SpaceShip {
     }
 
     override fun canCarry(item: Item): Boolean {
-        return true
+        //println(weightRocket + item.weight)
+        return   weightRocket + item.weight <= weightMax
     }
 
     override fun carry(item: Item) {
-
+        println("Entro")
+        weightRocket += item.weight
     }
 
 }

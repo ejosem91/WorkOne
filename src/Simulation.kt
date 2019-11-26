@@ -13,9 +13,16 @@ class Simulation {
     }
 
     fun loadU1(){
-        var listForRocket = listOf<Item>()
-        listForRocket = loadItems() // get list from loadItes
-        val totalWeight :Int =  listForRocket.sumBy{ it.weight ?: 0}
+        val listItems = loadItems()
+        val rocket = U1()
+            rocket.weightMax = 18000
+            rocket.weightRocket = 10000
+            for(i in listItems.indices) {
+                if (rocket.canCarry(listItems.get(i))){
+                    rocket.carry(listItems.get(i))
+                }
+
+            }
     }
 
 }

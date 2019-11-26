@@ -1,4 +1,4 @@
 class Item(
     var name:String? ,
-    var weight: Int? ) {
+    var weight: Int ) {
 }
