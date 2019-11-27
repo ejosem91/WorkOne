@@ -1,6 +1,5 @@
 fun main(args: Array<String>) {
 
-
     var rocketsList: ArrayList<Rocket>
     val simulator = Simulation()
     println("---------Load U1----------")

@@ -85,15 +85,14 @@ class Simulation {
             println("Launch rocket")
             totalCost += it.cost
             while (it.land() || it.launch()) {
-                //println(" land  ${it.land()} ")
-                //println(" lonch  ${it.launch()} ")
                 countFail++
                 totalCost += it.cost
-                println("Fail $countFail")
+
             }
 
         }
-        println("Total cost $totalCost")
+        println("Total Fail $countFail")
+        println("Ttotal budget  $totalCost")
         return totalCost
     }
 }
