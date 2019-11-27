@@ -1,4 +1,4 @@
-open class Rocket() : SpaceShip {
+open class Rocket : SpaceShip {
     var weightMax: Int = 0
     var weightRocket: Int = 0
     var cost: Int = 0
@@ -15,7 +15,6 @@ open class Rocket() : SpaceShip {
     }
 
     override fun carry(item: Item) {
-        println("Entro")
         weightRocket += item.weight
 
     }

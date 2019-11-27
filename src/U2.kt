@@ -1,18 +1,18 @@
 class U2 : Rocket() {
-    private var maxWeightTonnes: Int = 18
-    private var cargoCarried: Int = 29000
+    private var maxWeightTonnes: Double = 18000.0
+    private var cargoCarried: Double = 29000.0
 
     private var util = Util()
 
     override fun launch(): Boolean {
-        val chanceExplosion = 0.04 * (cargoCarried / util.tonneToKgm(maxWeightTonnes))
+        val chanceExplosion = 0.04 * (cargoCarried / maxWeightTonnes)
         val probability = util.createDecimal()
-        return probability < chanceExplosion
+        return chanceExplosion > probability
     }
 
     override fun land(): Boolean {
-        val chanceLandingCrash = 0.08 * (cargoCarried / util.tonneToKgm(maxWeightTonnes))
+        val chanceLandingCrash = 0.08 * (cargoCarried / maxWeightTonnes)
         val probability = util.createDecimal()
-        return probability < chanceLandingCrash
+        return chanceLandingCrash > probability
     }
 }
