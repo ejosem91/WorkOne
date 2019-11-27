@@ -1,19 +1,13 @@
+fun main(args: Array<String>) {
 
-    fun main(args:Array<String>) {
+    var listOfItems = ArrayList<Item>()
+    var simulator1 = Simulation()
+    var rocketsList = ArrayList<Rocket>()
 
-        //var rocket = U1()
-        //rocket.launch()
-        var listOfItems = ArrayList<Item>()
-        var simulator1 = Simulation()
-        simulator1.loadU1()
+    rocketsList = simulator1.loadU2()
 
-        //printList(listOfItems)
-    }
 
-    //fun printList(listItems:ArrayList<Item>){
-      ///  for(i in listItems.indices){
-         //   println(listItems.get(i).name)
-        //}
-    //}
+
+}
 
 
