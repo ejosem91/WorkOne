@@ -1,4 +1,5 @@
 class U1 : Rocket() {
+
     private var maxWeightTonnes: Double = 18000.0
     private var cargoCarried: Double = 10000.0
 

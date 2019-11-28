@@ -1,6 +1,7 @@
 class U2 : Rocket() {
-    private var maxWeightTonnes: Double = 18000.0
-    private var cargoCarried: Double = 29000.0
+
+    private var maxWeightTonnes: Double = 29000.0
+    private var cargoCarried: Double =  18000.0
 
     private var util = Util()
 

@@ -8,6 +8,14 @@ fun main(args: Array<String>) {
     println("---------Load U2----------")
     rocketsList = simulator.loadU2()
     simulator.launchLand(rocketsList)
+
+    //var text = "Jose"
+    //text.show(text)
+    //var result : Int? =0
+    //result?.sumCustum(2,4)
+
+
+
 }
 
 
