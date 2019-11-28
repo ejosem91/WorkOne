@@ -14,7 +14,7 @@ class Simulation {
         return arrListItems
     }
 
-
+    //get list of items and fill elements with type U1() rockets
     fun loadU1(): ArrayList<Rocket> {
         var listItems: MutableList<Item>
         val listRocket = ArrayList<Rocket>()
@@ -47,7 +47,7 @@ class Simulation {
         println("Rocket prepared ${listRocket.size}")
         return listRocket
     }
-
+    //get list of items and fill elements with type U2() rockets
     fun loadU2(): ArrayList<Rocket> {
         val listRocket = ArrayList<Rocket>()
         var listItems: MutableList<Item>
