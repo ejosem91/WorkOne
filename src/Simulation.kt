@@ -3,6 +3,7 @@ import java.io.File
 class Simulation {
 
     private val arrListRemove: MutableList<Item> = mutableListOf()
+    //Method that read file on my desktop
     private fun loadItems(numPhase: Int): MutableList<Item> {
         var array: Array<String>
         val arrListItems: MutableList<Item> = mutableListOf()
@@ -12,6 +13,7 @@ class Simulation {
         }
         return arrListItems
     }
+
 
     fun loadU1(): ArrayList<Rocket> {
         var listItems: MutableList<Item>
