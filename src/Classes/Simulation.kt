@@ -1,4 +1,7 @@
+package Classes
+
 import Extensions.shieldOrNot
+import Model.Item
 import java.io.File
 
 class Simulation {
@@ -14,11 +17,11 @@ class Simulation {
         return arrListItems
     }
 
-    //get list of items and fill elements with type U1() rockets
+    //get list of items and fill elements with type Classes.U1() rockets
     fun loadU1(): ArrayList<Rocket> {
         var listItems: MutableList<Item>
         val listRocket = ArrayList<Rocket>()
-        //run 2 phases for U1
+        //run 2 phases for Classes.U1
         for (i in 1..2) {
             listItems = loadItems(i)
             var flagRepeat = true
@@ -47,11 +50,11 @@ class Simulation {
         return listRocket
     }
 
-    //get list of items and fill elements with type U2() rockets
+    //get list of items and fill elements with type Classes.U2() rockets
     fun loadU2(): ArrayList<Rocket> {
         val listRocket = ArrayList<Rocket>()
         var listItems: MutableList<Item>
-        //run 2 phases for U2
+        //run 2 phases for Classes.U2
         for (i in 1..2) {
             listItems = loadItems(i)
             var flagRepeat = true
@@ -99,7 +102,7 @@ class Simulation {
                     totalCost += it.cost
                 }
             } else {
-                println("Rocket with shield, ")
+                println("Rocket with shield, Success Arrive ")
             }
         }
         println("Total rocket Fail $countFail")
