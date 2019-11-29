@@ -2,7 +2,6 @@ import Extensions.shieldOrNot
 import java.io.File
 
 class Simulation {
-
     private val arrListRemove: MutableList<Item> = mutableListOf()
     //Method that read file on my desktop
     private fun loadItems(numPhase: Int): MutableList<Item> {
