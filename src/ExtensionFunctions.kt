@@ -1,6 +1,6 @@
 
 
 fun Int.shieldOrNot(num : Int): Boolean{
-    val multimple =  num % 3
-    return  multimple == 0
+    val multi =  num % 3
+    return  multi == 0
 }

@@ -102,7 +102,6 @@ class Simulation {
                 }
             } else {
                 println("Rocket with shield")
-                println("Rocket with shield")
             }
 
 
