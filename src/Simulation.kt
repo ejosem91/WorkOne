@@ -1,3 +1,4 @@
+import Extensions.shieldOrNot
 import java.io.File
 
 class Simulation {
@@ -91,7 +92,7 @@ class Simulation {
             println("Launch rocket")
             totalCost += it.cost
             ++launchCounter
-            //launchCounter.shieldOrNot(launchCounter)
+            //launchCounter.Extensions.shieldOrNot(launchCounter)
             if (!launchCounter.shieldOrNot(launchCounter)) {
                 while (it.land() || it.launch()) {
                     println("Rocket Fail!!!!")
@@ -103,7 +104,7 @@ class Simulation {
             }
         }
         println("Total rocket Fail $countFail")
-        println("Ttotal budget  $totalCost")
+        println("Ttotal budget  $totalCost ")
         return totalCost
     }
 }
