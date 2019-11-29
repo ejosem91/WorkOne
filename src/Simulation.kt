@@ -42,7 +42,6 @@ class Simulation {
                     flagRepeat = false
                 }
             }
-            listItems.clear()
         }
         println("Rocket prepared ${listRocket.size}")
         return listRocket
@@ -64,7 +63,6 @@ class Simulation {
                 rocket.weightRocket = 18000
                 rocket.cost = 120
                 listRocket.add(rocket)
-
                 listItems.forEach { item ->
                     if (rocket.canCarry(item)) {
                         rocket.carry(item)
@@ -101,10 +99,8 @@ class Simulation {
                     totalCost += it.cost
                 }
             } else {
-                println("Rocket with shield")
+                println("Rocket with shield, ")
             }
-
-
         }
         println("Total rocket Fail $countFail")
         println("Ttotal budget  $totalCost")
