@@ -106,7 +106,7 @@ class Simulation {
             }
         }
         println("Total rocket Fail $countFail")
-        println("Ttotal budget  $totalCost ")
+        println("Ttotal budget  $totalCost Millions")
         return totalCost
     }
 }
