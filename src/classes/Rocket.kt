@@ -1,7 +1,7 @@
-package Classes
+package classes
 
-import Interface.SpaceShip
-import Model.Item
+import interfaces.SpaceShip
+import model.Item
 
 open class Rocket : SpaceShip {
     var weightMax: Int = 0

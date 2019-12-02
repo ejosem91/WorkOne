@@ -1,4 +1,4 @@
-package Classes
+package classes
 
 class U1 : Rocket() {
 

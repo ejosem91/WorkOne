@@ -1,7 +1,7 @@
-import Classes.Rocket
-import Classes.Simulation
+import classes.Rocket
+import classes.Simulation
 
-fun main(args: Array<String>) {
+fun main() {
     //Invoke classes for fill and launch Rockets
     var rocketsList: ArrayList<Rocket>
     val simulator = Simulation()
@@ -11,14 +11,6 @@ fun main(args: Array<String>) {
     println("---------Load Classes.U2----------")
     rocketsList = simulator.loadU2()
     simulator.launchLand(rocketsList)
-
-    //var text = "Jose"
-    //text.show(text)
-    //var result : Int? =0
-    //result?.sumCustum(2,4)
-
-
-
 }
 
 

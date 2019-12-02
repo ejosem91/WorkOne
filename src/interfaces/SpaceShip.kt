@@ -1,6 +1,6 @@
-package Interface
+package interfaces
 
-import Model.Item
+import model.Item
 
 interface SpaceShip {
     fun launch(): Boolean

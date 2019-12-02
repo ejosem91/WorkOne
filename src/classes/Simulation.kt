@@ -1,7 +1,7 @@
-package Classes
+package classes
 
-import Extensions.shieldOrNot
-import Model.Item
+import extensions.shieldOrNot
+import model.Item
 import java.io.File
 
 class Simulation {
@@ -10,9 +10,11 @@ class Simulation {
     private fun loadItems(numPhase: Int): MutableList<Item> {
         var array: Array<String>
         val arrListItems: MutableList<Item> = mutableListOf()
-        File("../../desktop/phase-$numPhase.txt").forEachLine {
+        val pathAux: String = System.getProperty("user.dir").toString()
+
+        File("$pathAux/src/files/phase-$numPhase.txt").forEachLine {
             array = it.split("=").toTypedArray()
-            arrListItems.add(Item(array[0], array[1].toInt()))
+            arrListItems.add(Item( array[1].toInt()))
         }
         return arrListItems
     }
@@ -106,7 +108,7 @@ class Simulation {
             }
         }
         println("Total rocket Fail $countFail")
-        println("Ttotal budget  $totalCost Millions")
+        println("Total budget  $totalCost Millions")
         return totalCost
     }
 }

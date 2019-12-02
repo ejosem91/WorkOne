@@ -1,4 +1,4 @@
-package Extensions
+package extensions
 
 fun Int.shieldOrNot(num : Int): Boolean{
     val multi =  num % 3
